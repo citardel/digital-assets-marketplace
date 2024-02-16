@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "pantaker_backend": {
+      "main": "src/pantaker_backend/main.mo",
+      "type": "motoko"
+    },
+    "pantaker_frontend": {
+      "dependencies": [
+        "pantaker_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/pantaker_frontend/src/index.html"
+      },
+      "source": [
+        "src/pantaker_frontend/assets",
+        "dist/pantaker_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
