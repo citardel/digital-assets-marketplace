@@ -4,6 +4,10 @@
       "main": "src/pantaker_backend/main.mo",
       "type": "motoko"
     },
+    "nft": {
+      "main": "src/pantaker_backend/NFT.mo",
+      "type": "motoko"
+    },
     "pantaker_frontend": {
       "dependencies": [
         "pantaker_backend"

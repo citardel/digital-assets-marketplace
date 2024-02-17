@@ -2,5 +2,14 @@ import * as React from "react";
 import ReactDOM from "react-dom"; // Import ReactDOM
 import "../assets/main.css";
 import App from './app';
+import { Principal } from "@dfinity/principal";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const CURRENT_USER_ID = Principal.fromText("2vxsx-fae");
+export default CURRENT_USER_ID;
+
+const init = async () => {
+  ReactDOM.render(<App />, document.getElementById("root"));
+};
+
+init();
+
