@@ -1,12 +1,20 @@
 import React from 'react';
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import PriceLabel from "./components/PriceLabel";
+import Footer from "./components/Footer";
+import Perks from "./components/Perks"
+
 
 const App = () => {
     return (
         <div>
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
-        </div>
+        <Navbar/>
+        <Header/>
+        <Perks/>
+        <Footer/>
+       
+      </div>
     );
 };
 
